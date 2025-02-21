@@ -1,1 +1,19 @@
 @import 'tailwindcss';
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+    --card: 258 26% 15%;
+    --card-foreground: 106 17% 41%;
+
+    --primary: #237745;
+    --primary-foreground: #03db66;
+
+    --radius: 0.5rem;
+  }
+}
+
+body {
+  font-family: 'Poppins';
+}
