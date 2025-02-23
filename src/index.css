@@ -1,7 +1,6 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-@layer base {
-  :root {
+/* @theme {
     --background: #ffffff;
     --foreground: #000000;
     --card: 258 26% 15%;
@@ -11,9 +10,8 @@
     --primary-foreground: #03db66;
 
     --radius: 0.5rem;
-  }
-}
+} */
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
