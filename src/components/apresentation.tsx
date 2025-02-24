@@ -1,7 +1,7 @@
-import bgFigure from "../assets/bg-figure.png";
-import woman from "../assets/woman.png";
-import darkLogo from "../assets/darkLogo.png";
-import circle from "../assets/circle.png";
+import bgFigure from "../../public/bg-figure.png";
+import woman from "../../public/woman.png";
+import darkLogo from "../../public/darkLogo.png";
+import circle from "../../public/circle.png";
 
 export const Apresentation = () => {
   return (

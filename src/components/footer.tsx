@@ -1,4 +1,4 @@
-import header from "../assets/header.png";
+import header from "../../public/header.png";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";

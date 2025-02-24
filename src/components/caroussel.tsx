@@ -1,7 +1,7 @@
-import prataDigital from "../assets/prata-digital.png";
-import santander from "../assets/santander.png";
-import digital from "../assets/digital.png";
-import fitEconomy from "../assets/fitEconomy.png";
+import prataDigital from "../../public/prata-digital.png";
+import santander from "../../public/santander.png";
+import digital from "../../public/digital.png";
+import fitEconomy from "../../public/fitEconomy.png";
 
 export const Caroussel = () => {
   return (

@@ -2,10 +2,10 @@ import { MdOutlinePix } from "react-icons/md";
 import { FaHandHoldingDollar } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa";
 import { RiCoinsFill } from "react-icons/ri";
-import darkLogo from "../assets/darkLogo.png";
-import bgWhite from "../assets/bg-white.png";
-import womanPointing from "../assets/woman-pointing.png";
-import circle from "../assets/circle.png";
+import darkLogo from "../../public/darkLogo.png";
+import bgWhite from "../../public/bg-white.png";
+import womanPointing from "../../public/woman-pointing.png";
+import circle from "../../public/circle.png";
 
 export const Benefits = () => {
   return (

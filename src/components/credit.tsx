@@ -1,9 +1,9 @@
-import womanPaying from "../assets/woman-paying.png";
-import logo from "../assets/logo.png";
+import womanPaying from "../../public/woman-paying.png";
+import logo from "../../public/logo.png";
 
 export const Credit = () => {
   return (
-    <section className="m-auto flex w-full flex-col items-center justify-evenly gap-5 px-3">
+    <section className="m-auto flex w-full flex-wrap items-center justify-evenly gap-5 px-3">
       <div className="flex max-w-sm flex-col gap-4">
         <h2 className="w-full text-3xl font-bold">
           Seu crédito, suas conquistas
