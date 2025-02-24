@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
-body {
+body,
+#root {
   font-family: "Poppins";
-  width: 100%;
+  width: 100vw;
   max-width: 1024px;
   display: flex;
   flex-direction: column;

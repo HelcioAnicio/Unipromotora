@@ -9,7 +9,7 @@ import circle from "../assets/circle.png";
 
 export const Benefits = () => {
   return (
-    <section className="flex items-center bg-[#00FF75] py-14 lg:py-0">
+    <section className="flex w-full items-center bg-[#00FF75] py-14 lg:py-0">
       <div
         style={{ backgroundImage: `url(${bgWhite})` }}
         className="hidden w-full max-w-md self-end bg-contain bg-right-bottom bg-no-repeat lg:block"
@@ -33,7 +33,7 @@ export const Benefits = () => {
           />
         </figure>
       </div>
-      <div className="m-auto flex w-full max-w-xl flex-col items-center gap-5 px-1 md:p-10">
+      <div className="m-auto flex w-full max-w-sm flex-col items-center gap-5 px-1 md:p-10">
         <h2 className="self-start py-5 text-2xl font-bold">Nossas vantagens</h2>
         <div className="flex w-full max-w-xl items-center gap-2 rounded-4xl bg-[#FAFCFB] p-3 sm:py-5">
           <MdOutlinePix className="size-11 rounded-full bg-[#00FF75] p-2 text-black" />

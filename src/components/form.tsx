@@ -4,15 +4,15 @@ export const Form = () => {
     <section className="flex w-full flex-col gap-20 py-20 md:flex-row md:gap-10 md:px-5 lg:p-20">
       <div className="m-auto flex w-full max-w-80 flex-col items-center gap-5 p-2">
         <h2 className="w-56 text-2xl font-bold">Preencha com seus dados</h2>
-        <div className="flex w-full max-w-56 items-center gap-5 self-end rounded-md bg-[#FAFCFB] p-3 shadow-md">
+        <div className="ml-5 flex w-full max-w-56 items-center gap-5 rounded-md bg-[#FAFCFB] p-3 shadow-md">
           <FaCheckCircle className="size-8 text-[#03DB66]" />
           <p>Receba uma simulação</p>
         </div>
-        <div className="flex w-full max-w-56 items-center gap-5 rounded-md bg-[#03DB66] p-3 text-white shadow-md">
+        <div className="-ml-10 flex w-full max-w-56 items-center gap-5 rounded-md bg-[#03DB66] p-3 text-white shadow-md">
           <FaCheckCircle className="size-8" />
           <p>Confirma a proposta</p>
         </div>
-        <div className="flex w-full max-w-56 items-center gap-5 self-end rounded-md bg-[#FAFCFB] p-3 shadow-md">
+        <div className="ml-10 flex w-full max-w-56 items-center gap-5 rounded-md bg-[#FAFCFB] p-3 shadow-md">
           <FaCheckCircle className="size-8 text-[#03DB66]" />
           <p>Receba o dinheiro na sua conta</p>
         </div>
