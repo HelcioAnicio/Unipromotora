@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 
 export const Credit = () => {
   return (
-    <section className="m-auto flex w-full flex-col items-center justify-evenly gap-5 px-3 lg:flex-row">
+    <section className="m-auto flex w-full flex-wrap items-center justify-evenly gap-5 px-3 lg:flex-row">
       <div className="flex max-w-sm flex-col gap-4">
         <h2 className="w-full text-3xl font-bold">
           Seu crédito, suas conquistas
@@ -24,9 +24,9 @@ export const Credit = () => {
         </button>
       </div>
 
-      <figure className="relative mt-10 w-full max-w-sm">
+      <figure className="relative mt-10 w-full max-w-xs">
         <div
-          className="absolute top-10 right-10 h-20 w-20 -rotate-12 bg-contain bg-center bg-no-repeat"
+          className="absolute top-5 right-0 size-12 -rotate-12 bg-contain bg-center bg-no-repeat lg:top-10 lg:size-20"
           style={{ backgroundImage: `url(${logo})` }}
         ></div>
         <img

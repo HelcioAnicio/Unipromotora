@@ -1,5 +1,7 @@
 import bgFigure from "../assets/bg-figure.png";
 import woman from "../assets/woman.png";
+import darkLogo from "../assets/darkLogo.png";
+import circle from "../assets/circle.png";
 
 export const Apresentation = () => {
   return (
@@ -14,9 +16,18 @@ export const Apresentation = () => {
         </button>
       </div>
       <figure
-        className="w-full max-w-xs bg-contain bg-bottom bg-no-repeat sm:self-end lg:max-w-xl"
+        className="relative w-full max-w-xs bg-contain bg-bottom bg-no-repeat sm:self-end lg:max-w-lg"
         style={{ backgroundImage: `url(${bgFigure})` }}
       >
+        <div
+          className="absolute top-16 right-7 z-20 size-6 bg-cover bg-no-repeat lg:top-28 lg:right-24 lg:size-12"
+          style={{ backgroundImage: `url(${darkLogo})` }}
+        ></div>
+        <img
+          src={circle}
+          alt="company's logo"
+          className="animate-wiggle absolute top-9 right-0 z-10 size-20 lg:top-20 lg:right-16 lg:size-28"
+        />
         <img
           src={woman}
           alt="a woman laughing"

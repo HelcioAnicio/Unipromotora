@@ -1,17 +1,40 @@
 @import "tailwindcss";
 
-/* @theme {
-    --background: #ffffff;
-    --foreground: #000000;
-    --card: 258 26% 15%;
-    --card-foreground: 106 17% 41%;
-
-    --primary: #237745;
-    --primary-foreground: #03db66;
-
-    --radius: 0.5rem;
-} */
-
 body {
   font-family: "Poppins";
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@theme {
+  @keyframes wiggle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  --animate-wiggle: wiggle 5s linear infinite;
+
+  @keyframes animate-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-105%);
+    }
+  }
+  --animate-scroll: animate-scroll 15s linear infinite;
+}
+
+@layer {
+  .paused {
+    animation-play-state: paused;
+  }
 }

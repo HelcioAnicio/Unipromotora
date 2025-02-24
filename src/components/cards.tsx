@@ -6,7 +6,7 @@ export const Cards = () => {
   return (
     <section>
       <h2 className="text-center text-2xl font-bold">Nossos produtos</h2>
-      <div className="mt-32 flex flex-col items-center justify-center gap-14 md:flex-row md:justify-evenly">
+      <div className="m-auto mt-32 flex flex-col items-center justify-center gap-20 md:flex-row md:flex-wrap md:gap-10 md:px-3">
         <div className="flex w-full max-w-72 flex-col items-center justify-center gap-5 rounded-2xl bg-[#FAFCFB] px-7 pb-10 text-center shadow-md">
           <MdOutlineCake className="-mt-10 size-20 rounded-full bg-[#237745] p-3 text-[#00FF75]" />
           <h4 className="text-xl font-bold">
