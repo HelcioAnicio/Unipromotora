@@ -1,12 +1,15 @@
-import prataDigital from "../../public/prata-digital.png";
-import santander from "../../public/santander.png";
-import digital from "../../public/digital.png";
-import fitEconomy from "../../public/fitEconomy.png";
+import prataDigital from "/prata-digital.png";
+import santander from "/santander.png";
+import digital from "/digital.png";
+import fitEconomy from "/fitEconomy.png";
 
 export const Caroussel = () => {
   return (
-    <section className="group flex items-center gap-96 overflow-hidden py-5 pl-14">
-      <div className="group-hover:paused animate-scroll flex gap-16">
+    <section
+      className="group flex w-full items-center justify-start gap-16 overflow-hidden py-10"
+      id="caroussel"
+    >
+      <div className="group-hover:paused animate-scroll flex w-full justify-between gap-16">
         <img
           src={prataDigital}
           alt="logo Prata Digital"
@@ -29,7 +32,7 @@ export const Caroussel = () => {
         />
       </div>
       <div
-        className="group-hover:paused animate-scroll flex gap-16"
+        className="group-hover:paused animate-scroll flex w-full justify-between gap-16"
         aria-hidden="true"
       >
         <img

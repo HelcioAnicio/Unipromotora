@@ -1,7 +1,7 @@
 export const Steps = () => {
   return (
-    <section className="flex justify-center">
-      <div className="lg: flex flex-col gap-10 p-3 md:py-20 lg:flex-row-reverse lg:items-center">
+    <section className="m-auto flex w-full max-w-5xl justify-center">
+      <div className="lg: flex max-w-5xl flex-col gap-10 p-3 md:py-20 lg:flex-row-reverse lg:items-center">
         <div className="flex w-full max-w-sm flex-col items-start gap-5 p-2">
           <h2 className="w-full max-w-72 text-2xl font-bold">
             Veja como é fácil conquistar seu crédito com a Unipromotora.
@@ -11,11 +11,11 @@ export const Steps = () => {
             processo de forma rápida e segura.
           </p>
           <button className="rounded-full bg-[#237745] px-5 py-2 text-[#00FF75]">
-            Simular crédito
+            <a href="#form">Simular crédito</a>
           </button>
         </div>
         <div className="flex max-w-lg flex-wrap justify-center gap-8 md:justify-evenly md:p-0">
-          <div className="flex w-full max-w-60 flex-col gap-2 p-5 shadow-md">
+          <div className="flex w-full max-w-60 flex-col gap-2 rounded-lg p-5 shadow-md">
             <h2 className="text-2xl font-bold text-[#03DB66]">01</h2>
             <p className="font-bold">Preencha o formulário </p>
             <p>
@@ -23,7 +23,7 @@ export const Steps = () => {
               dados. É rápido e seguro.
             </p>
           </div>
-          <div className="flex w-full max-w-60 flex-col gap-2 p-5 shadow-md">
+          <div className="flex w-full max-w-60 flex-col gap-2 rounded-lg p-5 shadow-md">
             <h2 className="text-2xl font-bold text-[#03DB66]">02</h2>
             <p className="font-bold">Análise personalizada</p>
             <p>
@@ -32,7 +32,7 @@ export const Steps = () => {
             </p>
           </div>
 
-          <div className="flex w-full max-w-60 flex-col gap-2 p-5 shadow-md">
+          <div className="flex w-full max-w-60 flex-col gap-2 rounded-lg p-5 shadow-md">
             <h2 className="text-2xl font-bold text-[#03DB66]">03</h2>
             <p className="font-bold">Contratação digital</p>
             <p>
@@ -40,7 +40,7 @@ export const Steps = () => {
               precisar sair de casa
             </p>
           </div>
-          <div className="flex w-full max-w-60 flex-col gap-2 p-5 shadow-md">
+          <div className="flex w-full max-w-60 flex-col gap-2 rounded-lg p-5 shadow-md">
             <h2 className="text-2xl font-bold text-[#03DB66]">04</h2>
             <p className="font-bold">Resposta rápida</p>
             <p>

@@ -3,13 +3,7 @@
 body,
 #root {
   font-family: "Poppins";
-  width: 100vw;
-  max-width: 1024px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 @theme {
@@ -28,10 +22,10 @@ body,
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-105%);
+      transform: translateX(-200%);
     }
   }
-  --animate-scroll: animate-scroll 15s linear infinite;
+  --animate-scroll: animate-scroll 10s linear infinite;
 }
 
 @layer {

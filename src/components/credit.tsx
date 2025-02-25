@@ -1,5 +1,5 @@
-import womanPaying from "../../public/woman-paying.png";
-import logo from "../../public/logo.png";
+import womanPaying from "/woman-paying.png";
+import logo from "/logo.png";
 
 export const Credit = () => {
   return (
@@ -20,7 +20,7 @@ export const Credit = () => {
           comprometer seu futuro.
         </p>
         <button className="w-max rounded-3xl bg-[#03DB66] px-8 py-2 text-white">
-          Simular crédito
+          <a href="#form">Simular crédito</a>
         </button>
       </div>
 

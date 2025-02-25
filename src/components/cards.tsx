@@ -4,7 +4,7 @@ import { FaHandsHoldingCircle } from "react-icons/fa6";
 
 export const Cards = () => {
   return (
-    <section>
+    <section id="ourProducts" className="py-16">
       <h2 className="text-center text-2xl font-bold">Nossos produtos</h2>
       <div className="m-auto mt-32 flex flex-col items-center justify-center gap-20 md:flex-row md:flex-wrap md:gap-10 md:px-3">
         <div className="flex w-full max-w-72 flex-col items-center justify-center gap-5 rounded-2xl bg-[#FAFCFB] px-7 pb-10 text-center shadow-md">

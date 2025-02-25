@@ -1,7 +1,7 @@
 import { FaCheckCircle } from "react-icons/fa";
 export const Form = () => {
   return (
-    <section className="flex w-full flex-col gap-20 py-20 md:flex-row md:gap-10 md:px-5 lg:p-20">
+    <section className="m-auto flex w-full max-w-5xl flex-col gap-14 pb-10 md:flex-row md:gap-10 md:px-5 md:pb-20">
       <div className="m-auto flex w-full max-w-80 flex-col items-center gap-5 p-2">
         <h2 className="w-56 text-2xl font-bold">Preencha com seus dados</h2>
         <div className="ml-5 flex w-full max-w-56 items-center gap-5 rounded-md bg-[#FAFCFB] p-3 shadow-md">
@@ -17,7 +17,11 @@ export const Form = () => {
           <p>Receba o dinheiro na sua conta</p>
         </div>
       </div>
-      <form action="" className="flex w-full flex-col items-center">
+      <form
+        action=""
+        className="flex w-full flex-col items-center py-10"
+        id="form"
+      >
         <div className="flex w-full max-w-md flex-col items-start gap-5 rounded-2xl bg-[#03DB66] px-5 py-10 text-white">
           <div className="flex w-full flex-col">
             <label className="text-sm" htmlFor="name">

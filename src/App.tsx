@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="flex w-full flex-col gap-16">
+      <main className="m-auto flex w-full flex-col items-center justify-center gap-16">
         <Apresentation />
         <Caroussel />
         <Credit />
