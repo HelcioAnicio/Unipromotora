@@ -38,7 +38,7 @@ export const Header = () => {
       </nav>
       <menu
         type="toolbar"
-        className="absolute top-0 left-0 z-50 flex h-full w-full flex-col gap-10 bg-[#231D31] p-20"
+        className="absolute top-0 left-0 z-50 hidden h-full w-full flex-col gap-10 bg-[#231D31] p-20"
       >
         Menu de navegação
         <nav className="min-w-1/2 lg:block">
