@@ -28,7 +28,7 @@ export const Form = () => {
               Nome Completo
             </label>
             <input
-              className="rounded-2xl bg-white px-4 py-1 text-black"
+              className="rounded-2xl bg-white px-4 py-1 text-black outline-none"
               id="name"
               type="text"
             />
@@ -38,7 +38,7 @@ export const Form = () => {
               Telefone/Whatsapp
             </label>
             <input
-              className="rounded-2xl bg-white px-4 py-1 text-black"
+              className="rounded-2xl bg-white px-4 py-1 text-black outline-none"
               id="cellphone"
               type="tel"
             />
@@ -48,13 +48,13 @@ export const Form = () => {
               Fonte de renda
             </label>
             <input
-              className="rounded-2xl bg-white px-4 py-1 text-black"
+              className="rounded-2xl bg-white px-4 py-1 text-black outline-none"
               id="font"
               type="text"
             />
           </div>
           <input
-            className="rounded-md bg-[#237745] px-5 py-2"
+            className="cursor-pointer rounded-md bg-[#237745] px-5 py-2 text-white hover:bg-[#3c6b50] hover:outline-lime-950"
             type="submit"
             value="Quero uma proposta"
           />

@@ -15,18 +15,24 @@ export const Footer = () => {
               placeholder="Seu email"
               className="rounded-md bg-white px-3 py-2 placeholder:text-gray-300"
             />
-            <button className="rounded-md bg-black p-2 sm:-ml-5">
+            <button className="cursor-pointer rounded-md bg-black p-2 hover:bg-neutral-800 sm:-ml-5">
               Inscreva-se
             </button>
           </div>
         </div>
         <div className="flex flex-col gap-5">
           <h2 className="text-2xl font-bold">Contato</h2>
-          <a href="" className="flex items-center gap-3">
+          <a
+            href=""
+            className="flex items-center gap-3 hover:underline hover:opacity-85"
+          >
             <FaWhatsapp />
             <p>(32) 3142-1743</p>
           </a>
-          <a href="" className="flex items-center gap-3">
+          <a
+            href=""
+            className="flex items-center gap-3 hover:underline hover:opacity-85"
+          >
             <FaRegEnvelope />
             <p className="text-sm break-words">contato@unipromotora.com.br</p>
           </a>

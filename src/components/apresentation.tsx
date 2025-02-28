@@ -11,7 +11,7 @@ export const Apresentation = () => {
           Transforme sua vida com o{" "}
           <span className="text-[#03db66]">crédito responsável</span>
         </h1>
-        <button className="rounded-3xl bg-[#237745] px-5 py-2 text-[#00FF75]">
+        <button className="rounded-3xl bg-[#237745] p-2 px-5 text-[#00FF75] hover:bg-[#324d3e] hover:outline-lime-950 active:opacity-85">
           <a href="#form">Simular crédito</a>
         </button>
       </div>

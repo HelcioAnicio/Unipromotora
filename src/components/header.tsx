@@ -31,7 +31,7 @@ export const Header = () => {
             <li className="flex items-center">
               <a
                 href="#ourProducts"
-                className="flex items-center gap-3 px-5 py-2"
+                className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
                 onClick={() => setMenuActived(!menuActived)}
               >
                 Soluções <MdKeyboardArrowDown />
@@ -40,7 +40,7 @@ export const Header = () => {
             <li className="flex items-center">
               <a
                 href="#caroussel"
-                className="flex items-center gap-3 px-5 py-2"
+                className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
                 onClick={() => setMenuActived(!menuActived)}
               >
                 Parceiros <MdKeyboardArrowDown />
@@ -49,7 +49,7 @@ export const Header = () => {
             <li className="flex items-center">
               <a
                 href="#future"
-                className="flex items-center gap-3 px-5 py-2"
+                className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
                 onClick={() => setMenuActived(!menuActived)}
               >
                 Sobre nós <MdKeyboardArrowDown />
@@ -58,15 +58,17 @@ export const Header = () => {
             <li className="flex items-center">
               <a
                 href="#footer"
-                className="flex items-center gap-3 px-5 py-2"
+                className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
                 onClick={() => setMenuActived(!menuActived)}
               >
                 Contato <MdKeyboardArrowDown />
               </a>
             </li>
-            <li className="flex items-center gap-3 px-5 py-2">
-              <button className="rounded-2xl bg-[#03DB66] p-2">
-                <a href="#form">Simular crédito</a>
+            <li className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80">
+              <button className="rounded-2xl bg-[#03DB66] p-2 text-white hover:bg-[#03db68c2] hover:outline-lime-950">
+                <a href="#form" className="text-white">
+                  Simular crédito
+                </a>
               </button>
             </li>
           </menu>
@@ -78,29 +80,40 @@ export const Header = () => {
           <li className="flex items-center">
             <a
               href="#ourProducts"
-              className="flex items-center gap-3 px-5 py-2"
+              className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
             >
               Soluções <MdKeyboardArrowDown />
             </a>
           </li>
           <li className="flex items-center">
-            <a href="#caroussel" className="flex items-center gap-3 px-5 py-2">
+            <a
+              href="#caroussel"
+              className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
+            >
               Parceiros <MdKeyboardArrowDown />
             </a>
           </li>
           <li className="flex items-center">
-            <a href="#future" className="flex items-center gap-3 px-5 py-2">
+            <a
+              href="#future"
+              className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
+            >
               Sobre nós <MdKeyboardArrowDown />
             </a>
           </li>
           <li className="flex items-center">
-            <a href="#footer" className="flex items-center gap-3 px-5 py-2">
+            <a
+              href="#footer"
+              className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
+            >
               Contato <MdKeyboardArrowDown />
             </a>
           </li>
           <li className="flex items-center gap-3 px-5 py-2">
-            <button className="rounded-2xl bg-[#03DB66] p-2">
-              <a href="#form">Simular crédito</a>
+            <button className="rounded-2xl bg-[#03DB66] p-2 text-white hover:bg-[#03db68c2] hover:outline-lime-950">
+              <a href="#form" className="text-white">
+                Simular crédito
+              </a>
             </button>
           </li>
         </ul>
