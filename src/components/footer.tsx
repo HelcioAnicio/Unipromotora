@@ -13,9 +13,9 @@ export const Footer = () => {
             <input
               type="email"
               placeholder="Seu email"
-              className="rounded-md bg-white px-3 py-2 placeholder:text-gray-300"
+              className="rounded-l-3xl bg-white px-3 py-2 placeholder:text-gray-300"
             />
-            <button className="cursor-pointer rounded-md bg-black p-2 hover:bg-neutral-800 sm:-ml-5">
+            <button className="cursor-pointer rounded-3xl bg-black p-2 px-8 hover:bg-neutral-800 sm:-ml-5">
               Inscreva-se
             </button>
           </div>

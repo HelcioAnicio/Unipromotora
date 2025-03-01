@@ -19,7 +19,7 @@ export const Credit = () => {
           família que caminha unida, comprometida em alcançar seus objetivos sem
           comprometer seu futuro.
         </p>
-        <button className="w-max rounded-3xl bg-[#03DB66] px-8 py-2 text-white hover:bg-[#03db68c2] hover:outline-lime-950 active:opacity-85">
+        <button className="w-max rounded-3xl bg-[#03DB66] p-2 px-8 text-white hover:bg-[#03db68c2] hover:outline-lime-950 active:opacity-85">
           <a href="#form">Simular crédito</a>
         </button>
       </div>

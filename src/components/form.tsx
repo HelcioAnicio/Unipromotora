@@ -54,7 +54,7 @@ export const Form = () => {
             />
           </div>
           <input
-            className="cursor-pointer rounded-md bg-[#237745] px-5 py-2 text-white hover:bg-[#3c6b50] hover:outline-lime-950"
+            className="cursor-pointer rounded-3xl bg-[#237745] px-8 py-2 text-white hover:bg-[#3c6b50] hover:outline-lime-950"
             type="submit"
             value="Quero uma proposta"
           />

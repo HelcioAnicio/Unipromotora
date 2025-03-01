@@ -13,7 +13,11 @@ export const Header = () => {
 
   return (
     <header className="relative flex w-full items-center justify-between bg-[#231D31] px-5 py-5 text-white">
-      <img src={logo} alt="Logo and name of company" className="w-32" />
+      <img
+        src={logo}
+        alt="Logo and name of company"
+        className="w-32 2xl:w-52"
+      />
       <button className="cursor-pointer" onClick={menuMobile}>
         {menuActived === false ? (
           <VscMenu className="size-10 p-2 lg:hidden" />
@@ -31,7 +35,7 @@ export const Header = () => {
             <li className="flex items-center">
               <a
                 href="#ourProducts"
-                className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
+                className="flex w-max items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
                 onClick={() => setMenuActived(!menuActived)}
               >
                 Soluções <MdKeyboardArrowDown />
@@ -40,7 +44,7 @@ export const Header = () => {
             <li className="flex items-center">
               <a
                 href="#caroussel"
-                className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
+                className="flex w-max items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
                 onClick={() => setMenuActived(!menuActived)}
               >
                 Parceiros <MdKeyboardArrowDown />
@@ -49,7 +53,7 @@ export const Header = () => {
             <li className="flex items-center">
               <a
                 href="#future"
-                className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
+                className="flex w-max items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
                 onClick={() => setMenuActived(!menuActived)}
               >
                 Sobre nós <MdKeyboardArrowDown />
@@ -58,14 +62,14 @@ export const Header = () => {
             <li className="flex items-center">
               <a
                 href="#footer"
-                className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
+                className="flex w-max items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
                 onClick={() => setMenuActived(!menuActived)}
               >
                 Contato <MdKeyboardArrowDown />
               </a>
             </li>
             <li className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80">
-              <button className="rounded-2xl bg-[#03DB66] p-2 text-white hover:bg-[#03db68c2] hover:outline-lime-950">
+              <button className="rounded-3xl bg-[#03DB66] px-5 py-2 text-white hover:bg-[#03db68c2] hover:outline-lime-950">
                 <a href="#form" className="text-white">
                   Simular crédito
                 </a>
@@ -76,11 +80,11 @@ export const Header = () => {
       )}
 
       <nav className="hidden min-w-1/2 lg:block">
-        <ul className="flex justify-between gap-10 text-sm">
+        <ul className="gap- flex justify-between text-sm xl:gap-10">
           <li className="flex items-center">
             <a
               href="#ourProducts"
-              className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
+              className="flex w-max items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
             >
               Soluções <MdKeyboardArrowDown />
             </a>
@@ -88,7 +92,7 @@ export const Header = () => {
           <li className="flex items-center">
             <a
               href="#caroussel"
-              className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
+              className="flex w-max items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
             >
               Parceiros <MdKeyboardArrowDown />
             </a>
@@ -96,7 +100,7 @@ export const Header = () => {
           <li className="flex items-center">
             <a
               href="#future"
-              className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
+              className="flex w-max items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
             >
               Sobre nós <MdKeyboardArrowDown />
             </a>
@@ -104,13 +108,13 @@ export const Header = () => {
           <li className="flex items-center">
             <a
               href="#footer"
-              className="flex items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
+              className="flex w-max items-center gap-3 px-5 py-2 hover:underline hover:opacity-80"
             >
               Contato <MdKeyboardArrowDown />
             </a>
           </li>
           <li className="flex items-center gap-3 px-5 py-2">
-            <button className="rounded-2xl bg-[#03DB66] p-2 text-white hover:bg-[#03db68c2] hover:outline-lime-950">
+            <button className="rounded-3xl bg-[#03DB66] px-5 py-2 text-white hover:bg-[#03db68c2] hover:outline-lime-950">
               <a href="#form" className="text-white">
                 Simular crédito
               </a>

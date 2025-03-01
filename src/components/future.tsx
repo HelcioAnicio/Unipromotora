@@ -29,7 +29,7 @@ export const Future = () => {
           <div className="row-span-1 flex items-center justify-center rounded-2xl bg-[#00FF75]">
             <img src="/grid2.png" alt="" className="w-3/4" />
           </div>
-          <div className="row-span-1 flex items-center justify-center rounded-2xl bg-[#237745] p-4 text-center text-[#00FF75]">
+          <div className="row-span-1 flex items-center justify-center rounded-2xl bg-[#237745] p-3 text-center font-bold text-[#00FF75]">
             <p>Transformando vidas com um propósito genuíno!</p>
           </div>
           <div className="row-[span_1_/_span_3]">
