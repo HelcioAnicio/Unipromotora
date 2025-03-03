@@ -12,10 +12,10 @@ body,
       transform: rotate(0deg);
     }
     100% {
-      transform: rotate(360deg);
+      transform: rotate(-360deg);
     }
   }
-  --animate-wiggle: wiggle 5s linear infinite;
+  --animate-wiggle: wiggle 10s linear infinite;
 
   @keyframes animate-scroll {
     0% {
