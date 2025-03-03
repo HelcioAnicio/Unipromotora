@@ -1,7 +1,3 @@
-import { GiWallet } from "react-icons/gi";
-import { MdOutlineCake } from "react-icons/md";
-import { FaHandsHoldingCircle } from "react-icons/fa6";
-
 export const Cards = () => {
   return (
     <section id="ourProducts" className="py-16">
