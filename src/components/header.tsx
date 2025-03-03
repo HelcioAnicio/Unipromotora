@@ -26,7 +26,7 @@ export const Header = () => {
         )}
       </button>
       {menuActived === true && (
-        <nav className="absolute top-full right-0 z-50 w-full max-w-70 flex-col space-y-7 rounded-b-lg border bg-[#231D31] px-6 py-10">
+        <nav className="absolute top-full right-0 z-50 w-full max-w-70 flex-col space-y-7 rounded-b-lg bg-[#231D31] px-6 py-10">
           <img src={logo} alt="Logo and name of company" className="w-32" />
           <menu
             type="toolbar"
