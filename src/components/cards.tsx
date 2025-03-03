@@ -10,7 +10,10 @@ export const Cards = () => {
         <div className="group relative h-[325px] w-[300px] perspective-distant">
           <div className="absolute h-full w-full max-w-72 transform duration-1000 backface-hidden transform-3d group-hover:rotate-y-180">
             <div className="absolute flex h-full w-full flex-col items-center justify-center gap-5 rounded-2xl bg-[#FAFCFB] px-7 pb-10 text-center shadow-md">
-              <MdOutlineCake className="-mt-10 size-20 rounded-full bg-[#237745] p-3 text-[#00FF75]" />
+              <div className="-mt-16 flex size-20 items-center justify-center rounded-full bg-[#237745] p-3">
+                <img src="/iconCake.png" alt="icon of cake" />
+              </div>
+
               <h4 className="text-xl font-bold">
                 Antecipação do saque aniversário
               </h4>
@@ -30,7 +33,10 @@ export const Cards = () => {
         <div className="group relative h-[325px] w-[300px] perspective-distant">
           <div className="absolute h-full w-full max-w-72 transform duration-1000 backface-hidden transform-3d group-hover:rotate-y-180">
             <div className="absolute flex h-full w-full flex-col items-center justify-center gap-5 rounded-2xl bg-[#FAFCFB] px-7 pb-10 text-center shadow-md">
-              <GiWallet className="-mt-10 size-20 rounded-full bg-[#237745] p-3 text-[#00FF75]" />
+              <div className="-mt-16 flex size-20 items-center justify-center rounded-full bg-[#237745] p-3">
+                <img src="/iconWallet.png" alt="icon of wallet" />
+              </div>
+
               <h4 className="text-xl font-bold">Débito em conta</h4>
               <p>
                 Crédito simples de até{" "}
@@ -49,7 +55,10 @@ export const Cards = () => {
         <div className="group relative h-[325px] w-[300px] perspective-distant">
           <div className="absolute h-full w-full max-w-72 transform duration-1000 backface-hidden transform-3d group-hover:rotate-y-180">
             <div className="absolute flex h-full w-full flex-col items-center justify-center gap-5 rounded-2xl bg-[#FAFCFB] px-7 pb-10 text-center shadow-md">
-              <FaHandsHoldingCircle className="-mt-10 size-20 rounded-full bg-[#237745] p-3 text-[#00FF75]" />
+              <div className="-mt-16 flex size-20 items-center justify-center rounded-full bg-[#237745] p-3">
+                <img src="/iconHands.png" alt="icon of hands" />
+              </div>
+
               <h4 className="text-xl font-bold">
                 Empréstimo pelo Bolsa Família
               </h4>
