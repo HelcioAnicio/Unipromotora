@@ -6,6 +6,12 @@ body,
   overflow-x: hidden;
 }
 
+@media (min-width: 1600px) {
+  html {
+    font-size: 20px;
+  }
+}
+
 @theme {
   @keyframes wiggle {
     0% {
@@ -22,7 +28,7 @@ body,
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-100%);
     }
   }
   --animate-scroll: animate-scroll 10s linear infinite;

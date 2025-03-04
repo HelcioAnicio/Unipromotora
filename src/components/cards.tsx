@@ -1,9 +1,11 @@
 export const Cards = () => {
   return (
     <section id="ourProducts" className="py-16">
-      <h2 className="text-center text-2xl font-bold">Nossos produtos</h2>
+      <h2 className="text-center text-2xl font-bold 2xl:text-3xl">
+        Nossos produtos
+      </h2>
       <div className="m-auto mt-32 flex h-full w-full flex-wrap items-center justify-center gap-20 md:gap-10 md:px-3">
-        <div className="group relative h-[325px] w-[300px] perspective-distant">
+        <div className="group relative h-[325px] w-[300px] perspective-distant 2xl:h-[425px] 2xl:w-[375px]">
           <div className="absolute h-full w-full max-w-72 transform duration-1000 backface-hidden transform-3d group-hover:rotate-y-180">
             <div className="absolute flex h-full w-full flex-col items-center justify-center gap-5 rounded-2xl bg-[#FAFCFB] px-7 pb-10 text-center shadow-md">
               <div className="-mt-16 flex size-20 items-center justify-center rounded-full bg-[#237745] p-3">
@@ -26,7 +28,7 @@ export const Cards = () => {
           </div>
         </div>
 
-        <div className="group relative h-[325px] w-[300px] perspective-distant">
+        <div className="group relative h-[325px] w-[300px] perspective-distant 2xl:h-[425px] 2xl:w-[375px]">
           <div className="absolute h-full w-full max-w-72 transform duration-1000 backface-hidden transform-3d group-hover:rotate-y-180">
             <div className="absolute flex h-full w-full flex-col items-center justify-center gap-5 rounded-2xl bg-[#FAFCFB] px-7 pb-10 text-center shadow-md">
               <div className="-mt-16 flex size-20 items-center justify-center rounded-full bg-[#237745] p-3">
@@ -48,7 +50,7 @@ export const Cards = () => {
           </div>
         </div>
 
-        <div className="group relative h-[325px] w-[300px] perspective-distant">
+        <div className="group relative h-[325px] w-[300px] perspective-distant 2xl:h-[425px] 2xl:w-[375px]">
           <div className="absolute h-full w-full max-w-72 transform duration-1000 backface-hidden transform-3d group-hover:rotate-y-180">
             <div className="absolute flex h-full w-full flex-col items-center justify-center gap-5 rounded-2xl bg-[#FAFCFB] px-7 pb-10 text-center shadow-md">
               <div className="-mt-16 flex size-20 items-center justify-center rounded-full bg-[#237745] p-3">

@@ -7,7 +7,7 @@ export const Apresentation = () => {
   return (
     <section className="flex w-full max-w-5xl flex-wrap items-center justify-center gap-1 pt-10 sm:justify-between md:gap-0">
       <div className="flex flex-col items-center justify-center gap-7 sm:items-start sm:pl-10">
-        <h1 className="max-w-60 text-center text-2xl font-extrabold break-words sm:text-left md:max-w-64 lg:text-4xl">
+        <h1 className="max-w-60 text-center text-2xl font-extrabold break-words sm:text-left md:max-w-64 lg:text-4xl 2xl:max-w-80">
           Transforme sua vida com o{" "}
           <span className="text-[#03db66]">crédito responsável</span>
         </h1>
@@ -16,7 +16,7 @@ export const Apresentation = () => {
         </button>
       </div>
       <figure
-        className="relative w-full max-w-xs bg-contain bg-bottom bg-no-repeat sm:self-end md:max-w-md lg:max-w-lg"
+        className="relative w-full max-w-xs bg-contain bg-bottom bg-no-repeat sm:self-end md:max-w-md lg:max-w-lg 2xl:max-w-xl"
         style={{ backgroundImage: `url(${bgFigure})` }}
       >
         <div
@@ -31,7 +31,7 @@ export const Apresentation = () => {
         <img
           src={woman}
           alt="a woman laughing"
-          className="m-auto w-60 md:m-0 md:mr-auto md:w-96 lg:m-0"
+          className="m-auto w-60 md:m-0 md:mr-auto md:w-96 lg:m-0 2xl:w-md"
         />
       </figure>
     </section>

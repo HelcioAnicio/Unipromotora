@@ -32,7 +32,7 @@ export const Credit = () => {
         <img
           src={womanPaying}
           alt="woman paying with credit card"
-          className="w-full max-w-sm"
+          className="w-full max-w-sm lg:w-lg"
         />
       </figure>
     </section>
