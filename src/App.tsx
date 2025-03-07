@@ -1,6 +1,6 @@
 import { Header } from "./components/header";
 import { Apresentation } from "./components/apresentation";
-import { Caroussel } from "./components/caroussel";
+// import { Caroussel } from "./components/caroussel";
 import { Credit } from "./components/credit";
 import { Steps } from "./components/steps";
 import { Future } from "./components/future";
