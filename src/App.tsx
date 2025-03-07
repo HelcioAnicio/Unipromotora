@@ -15,7 +15,7 @@ function App() {
       <Header />
       <main className="m-auto flex w-full flex-col items-center justify-center gap-16">
         <Apresentation />
-        <Caroussel />
+        {/* <Caroussel /> */}
         <Credit />
         <Cards />
         <Benefits />
