@@ -26,7 +26,7 @@ export const Credit = () => {
 
       <figure className="relative mt-10 w-full max-w-xs">
         <div
-          className="absolute top-14 -right-10 flex size-20 -rotate-12 items-center justify-center bg-contain bg-center bg-no-repeat sm:-right-10 sm:size-28 lg:-right-32 lg:size-32"
+          className="absolute top-14 -right-10 flex size-20 -rotate-12 items-center justify-center bg-contain bg-center bg-no-repeat sm:-right-8 sm:size-24 lg:-right-28 lg:size-28"
           style={{ backgroundImage: `url(${bgGreen})` }}
         >
           <img src={logo} alt="logo of company" className="w-1/2" />

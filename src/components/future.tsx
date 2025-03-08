@@ -4,18 +4,19 @@ export const Future = () => {
       <div className="m-auto flex max-w-5xl flex-wrap items-center justify-center gap-10">
         <div className="flex w-full max-w-sm flex-col gap-7 px-5">
           <h2 className="max-w-56 text-2xl font-bold">
-            Compromisso com seu futuro
+            Aqui temos compromisso com você.
           </h2>
           <p>
-            A Unipromotora nasceu com o propósito de levar o sentimento de
-            conquista aos brasileiros. Somos a primeira promotora 100% focada no
-            mercado de crédito pessoal, acreditando que o crédito certo pode
-            transformar vidas.
+            Na Unipromotora, sabemos que o crédito certo pode mudar a sua vida.
           </p>
           <p>
-            Com transparência, responsabilidade e atendimento personalizado,
-            trabalhamos para ajudar nossos clientes e parceiros a alcançarem
-            seus objetivos, sem comprometer o futuro.
+            Por isso, nosso objetivo é ajudar mais brasileiros a realizarem seus
+            sonhos, oferecendo soluções financeiras seguras e que te ajudam a
+            conquistar o que você mais deseja.
+          </p>
+          <p>
+            Trabalhamos com responsabilidade e transparência porque aqui, na
+            Unipromotora, você é o mais importante.
           </p>
         </div>
         <div className="mx-auto grid max-w-sm grid-cols-2 gap-2">
@@ -29,8 +30,12 @@ export const Future = () => {
           <div className="row-span-1 flex items-center justify-center rounded-2xl bg-[#00FF75]">
             <img src="/grid2.png" alt="" className="w-3/4" />
           </div>
-          <div className="row-span-1 flex items-center justify-center rounded-2xl bg-[#237745] p-3 text-center font-bold text-[#00FF75]">
-            <p>Transformando vidas com um propósito genuíno!</p>
+          <div className="row-span-1 flex items-center justify-center rounded-2xl bg-[#237745] p-3 text-center text-[#00FF75]">
+            <p>
+              <span className="font-bold">Transformando vidas </span>
+              com um
+              <span className="font-bold"> propósito genuíno!</span>
+            </p>
           </div>
           <div className="row-[span_1_/_span_3]">
             <img
