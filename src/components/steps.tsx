@@ -17,17 +17,23 @@ export const Steps = () => {
           </button>
         </div>
         <div className="flex max-w-lg flex-col justify-center gap-8 sm:flex-row sm:flex-wrap md:justify-evenly md:p-0">
-          <div className="flex h-max w-full max-w-60 flex-col gap-2 rounded-2xl p-5 shadow-md">
-            <h2 className="text-2xl font-bold text-[#03DB66]">01</h2>
-            <p className="font-bold">Preencha o formulário </p>
+          <div className="flex h-max w-full max-w-60 flex-col gap-2 rounded-2xl bg-[#05D062] p-5 shadow-md md:bg-white">
+            <h2 className="text-2xl font-bold text-white md:text-[#03DB66]">
+              01
+            </h2>
+            <p className="font-bold text-white md:text-black">
+              Preencha o formulário{" "}
+            </p>
             <p>
               Para obter o valor exato que você pode receber, basta preencher os
               dados. É rápido e seguro.
             </p>
           </div>
-          <div className="flex h-max w-full max-w-60 flex-col gap-2 rounded-2xl bg-[#05D062] p-5 shadow-md sm:mt-20">
-            <h2 className="text-2xl font-bold text-white">02</h2>
-            <p className="font-bold text-white">Análise personalizada</p>
+          <div className="flex h-max w-full max-w-60 flex-col gap-2 rounded-2xl p-5 shadow-md sm:mt-20 md:bg-[#05D062]">
+            <h2 className="text-2xl font-bold text-[#03DB66] md:text-white">
+              02
+            </h2>
+            <p className="font-bold md:text-white">Análise personalizada</p>
             <p>
               Vamos consultar suas informações e oferecer a proposta mais
               vantajosa para você.

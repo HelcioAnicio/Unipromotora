@@ -67,8 +67,8 @@ export const Header = () => {
                 Contato
               </a>
             </li>
-            <li className="flex items-center gap-3 px-5 py-2 hover:text-[#00FF75]">
-              <button className="rounded-3xl bg-[#03DB66] px-5 py-2 text-white hover:bg-[#03db68c2] hover:outline-lime-950">
+            <li className="flex flex-wrap items-center gap-3 px-5 py-2 hover:text-[#00FF75]">
+              <button className="cursor-pointer rounded-3xl bg-[#03DB66] px-5 py-2 text-white transition-all duration-300 hover:bg-[#03db68ba]">
                 <a href="#form" className="text-white">
                   Simular crédito
                 </a>
