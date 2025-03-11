@@ -4,7 +4,10 @@ import logo from "/darkLogo.png";
 
 export const Partners = () => {
   return (
-    <section className="-mt-16 flex w-full flex-col bg-[#237745] px-2 py-32">
+    <section
+      className="-mt-16 flex w-full flex-col bg-[#237745] px-2 py-32"
+      id="partners"
+    >
       <div className="m-auto flex w-full max-w-5xl flex-col items-center justify-center gap-10 lg:flex-row lg:justify-between lg:pr-32">
         <div className="flex flex-col items-start gap-10">
           <p className="w-full max-w-md text-3xl text-white">

@@ -5,10 +5,10 @@ import circle from "/circle.png";
 
 export const Apresentation = () => {
   return (
-    <section className="h-[calc(100dvh-80px)] w-full rounded-br-[62px] bg-[#E7F6E9] xl:h-[calc(100dvh-94px)]">
-      <div className="m-auto flex h-full w-full max-w-6xl flex-col items-center justify-between gap-10 pt-10 lg:flex-row">
-        <div className="flex flex-col items-center justify-center gap-7 pt-10 md:w-1/2 lg:items-start">
-          <h1 className="max-w-60 text-center text-2xl md:max-w-80 md:text-5xl lg:text-left 2xl:max-w-96">
+    <section className="h-[calc(100dvh-80px)] w-full overflow-hidden rounded-br-[62px] bg-[#E7F6E9] xl:h-[calc(100dvh-94px)]">
+      <div className="adapte m-auto flex h-full w-full max-w-6xl flex-col items-center justify-between gap-10 pt-10 lg:flex-row">
+        <div className="flex flex-col items-center justify-center gap-7 pt-10 md:w-1/2 lg:items-start lg:pl-10">
+          <h1 className="max-w-60 text-center text-2xl md:max-w-96 md:text-5xl lg:text-left">
             Transforme sua vida com o{" "}
             <span className="font-extrabold text-[#03db66]">
               crédito responsável
@@ -32,7 +32,11 @@ export const Apresentation = () => {
               className="animate-wiggle full"
             />
           </div>
-          <img src={man} alt="a man laughing" className="m-auto w-full" />
+          <img
+            src={man}
+            alt="a man laughing"
+            className="m-auto w-full lg:w-6/7"
+          />
         </figure>
       </div>
     </section>

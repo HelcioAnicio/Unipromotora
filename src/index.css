@@ -6,6 +6,12 @@ body,
   overflow-x: hidden;
 }
 
+@media (min-width: 1024px) and (min-height: 1024px) {
+  .adapte {
+    flex-direction: column;
+  }
+}
+
 @media (min-width: 1600px) {
   html {
     font-size: 20px;
