@@ -1,5 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
+import { FaCheckCircle } from "react-icons/fa";
+import { IoMdCloseCircle } from "react-icons/io";
 
 interface Form {
   fullName: string;
@@ -10,60 +12,88 @@ interface Form {
 }
 
 export const Form = () => {
-  const [dataForm, setDataForm] = useState<Form>({} as Form);
-  // const [openChat, setOpenChat] = useState({
-  //   channelId: 7051,
-  //   message: `Olá ${dataForm.fullName}, você entrou em contato por meio do site`
-  // }
-  // )
+  const [dataForm, setDataForm] = useState<Form>({
+    fullName: "",
+    email: "",
+    cellphone: "",
+    cpf: "",
+    font: "",
+  });
+
+  const [formItsOk, setFormItsOk] = useState("none");
+
+  const formatCPF = (cpf: string) => {
+    if (!cpf) return "";
+    const cleanedCPF = cpf.replace(/\D/g, "");
+    if (cleanedCPF.length !== 11) return cpf;
+    return cleanedCPF.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+  };
 
   const registerLead = async (event: React.FormEvent) => {
     event.preventDefault();
+
+    if (
+      !dataForm.fullName ||
+      !dataForm.email ||
+      !dataForm.cellphone ||
+      !dataForm.cpf ||
+      !dataForm.font
+    ) {
+      setFormItsOk("error");
+      setTimeout(() => {
+        setFormItsOk("none");
+      }, 3000);
+      return;
+    }
+
+    const formattedCPF = formatCPF(dataForm.cpf);
+
     const payload = {
       name: dataForm.fullName,
       email: dataForm.email,
       phone: dataForm.cellphone,
+      font: dataForm.font,
       customFields: {
-        CPF: dataForm.cpf,
+        cpf: {
+          value: formattedCPF,
+        },
       },
     };
 
     try {
       const response = await axios.post(
-        "https://api4.kinbox.com.br/v3/contacts",
+        "https://webhook.kinbox.com.br/v3/inbound/ecoX5GjCZ",
         payload,
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2NDcxIiwiaXNPd25lciI6dHJ1ZSwicm9sZUlkIjpudWxsLCJ2ZXJzaW9uIjpudWxsLCJzZXNzaW9uSWQiOiIyNjQ3MS0xNzQxMzY4NDgzODcyIiwid29ya3NwYWNlSWQiOiIzNDUzIiwidmVyaWZpY2F0aW9uTGV2ZWwiOjIsImlzQWN0aXZlIjp0cnVlLCJ0eXBlIjowLCJpc01vYmlsZSI6ZmFsc2UsImlhdCI6MTc0MTM2ODQ4MywiZXhwIjoxNzcyOTA0NDgzfQ.DmizJRdlCHtL3hzMhdQ2_AZOfMXTLvw_mj3X5Pd68qQ",
+            Authorization: "Bearer SEU_TOKEN",
           },
         },
       );
-      console.log(response.data);
+
+      console.log("Response Data:", response.data);
+      console.log("Response Status:", response.status);
+
+      if (response.status === 200) {
+        setFormItsOk("ok");
+        setTimeout(() => {
+          setFormItsOk("none");
+        }, 3000);
+      } else {
+        setFormItsOk("error");
+        setTimeout(() => {
+          setFormItsOk("none");
+        }, 3000);
+      }
     } catch (error) {
       console.error("Erro ao enviar os dados:", error);
     }
   };
 
-  //  try {
-  //     const response = await axios.post(
-  //       "https://api4.kinbox.com.br/v3/contacts",
-  //       payload,
-  //       {
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //           Authorization:
-  //             "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2NDcxIiwiaXNPd25lciI6dHJ1ZSwicm9sZUlkIjpudWxsLCJ2ZXJzaW9uIjpudWxsLCJzZXNzaW9uSWQiOiIyNjQ3MS0xNzQxMzY4NDgzODcyIiwid29ya3NwYWNlSWQiOiIzNDUzIiwidmVyaWZpY2F0aW9uTGV2ZWwiOjIsImlzQWN0aXZlIjp0cnVlLCJ0eXBlIjowLCJpc01vYmlsZSI6ZmFsc2UsImlhdCI6MTc0MTM2ODQ4MywiZXhwIjoxNzcyOTA0NDgzfQ.DmizJRdlCHtL3hzMhdQ2_AZOfMXTLvw_mj3X5Pd68qQ",
-  //         },
-  //       },
-  //     );
-  //     console.log(response.data);
-  //   } catch (error) {
-  //     console.error("Erro ao enviar os dados:", error);
-  //   }
-
-  const handleInputValues = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputValues = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
+  ) => {
     const { name, value } = event.target;
     setDataForm((prevData) => ({
       ...prevData,
@@ -74,7 +104,7 @@ export const Form = () => {
   return (
     <section className="m-auto flex w-full max-w-5xl flex-col gap-14 pb-10 md:flex-row md:gap-10 md:px-5 md:pb-20">
       <form
-        className="flex w-full flex-col items-center py-10"
+        className="relative flex w-full flex-col items-center py-10"
         id="form"
         onSubmit={registerLead}
       >
@@ -84,7 +114,7 @@ export const Form = () => {
               Nome Completo
             </label>
             <input
-              className="rounded-2xl bg-white px-4 py-1 text-black outline-none"
+              className="rounded-2xl bg-white px-4 py-1 text-black outline-none placeholder:text-gray-400"
               id="name"
               type="text"
               name="fullName"
@@ -99,7 +129,7 @@ export const Form = () => {
               Email
             </label>
             <input
-              className="rounded-2xl bg-white px-4 py-1 text-black outline-none"
+              className="rounded-2xl bg-white px-4 py-1 text-black outline-none placeholder:text-gray-400"
               id="email"
               type="email"
               name="email"
@@ -114,7 +144,7 @@ export const Form = () => {
               Telefone/Whatsapp
             </label>
             <input
-              className="rounded-2xl bg-white px-4 py-1 text-black outline-none"
+              className="rounded-2xl bg-white px-4 py-1 text-black outline-none placeholder:text-gray-400"
               id="cellphone"
               type="tel"
               name="cellphone"
@@ -129,7 +159,7 @@ export const Form = () => {
               CPF
             </label>
             <input
-              className="rounded-2xl bg-white px-4 py-1 text-black outline-none"
+              className="rounded-2xl bg-white px-4 py-1 text-black outline-none placeholder:text-gray-400"
               id="cpf"
               type="text"
               name="cpf"
@@ -143,16 +173,26 @@ export const Form = () => {
             <label className="text-sm" htmlFor="font">
               Fonte de renda
             </label>
-            <input
-              className="rounded-2xl bg-white px-4 py-1 text-black outline-none"
-              autoComplete="on"
-              id="font"
-              type="number"
+            <select
               name="font"
-              onChange={handleInputValues}
+              id="font"
               value={dataForm.font}
-              placeholder="Valor da sua renda"
-            />
+              onChange={handleInputValues}
+              className="rounded-2xl bg-white px-4 py-1 text-gray-400 outline-none"
+            >
+              <option value="beneficiario">Beneficiário (INSS)</option>
+              <option value="aposentado ou servidor publico">
+                Aposentado ou Servidor Público
+              </option>
+              <option value="trabalho com carteira assinada">
+                Trabalho com Carteira Assinada
+              </option>
+              <option value="recebendo auxilio">
+                Recebendo Auxilio (Bolsa familia)
+              </option>
+              <option value="autonomo/pj">Autônomo/PJ</option>
+              <option value="outra">Outra</option>
+            </select>
           </div>
           <button
             className="cursor-pointer rounded-3xl bg-[#237745] px-8 py-2 text-white hover:bg-[#3c6b50]"
@@ -162,6 +202,18 @@ export const Form = () => {
             Quero uma proposta
           </button>
         </div>
+        {formItsOk === "ok" && (
+          <div className="absolute top-0 left-0 z-50 flex h-full w-dvw flex-col items-center justify-center gap-5 bg-white">
+            <FaCheckCircle className="size-56 text-green-500" />
+            <h2>Formulário enviado com sucesso</h2>
+          </div>
+        )}
+        {formItsOk === "error" && (
+          <div className="absolute top-0 left-0 z-50 flex h-full w-dvw flex-col items-center justify-center gap-5 bg-white">
+            <IoMdCloseCircle className="size-56 text-red-500" />
+            <h2>Favor preencher todos os dados corretamente</h2>
+          </div>
+        )}
       </form>
     </section>
   );
