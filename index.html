@@ -3,7 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/logo.png" />
+    <meta
+      name="description"
+      content="UniPromotora - Sua plataforma de promoções e serviços financeiros."
+    />
+    <meta
+      name="keywords"
+      content="UniPromotora, promoções, serviços financeiros, plataforma, antecipação do saque aniversário
+          Ideal para trabalhadores com carteira assinada, saldo do FGTS, debito em conta, beneficiários
+          do INSS, emprestimo pelo bolsa família, crédito fácil"
+    />
+    <meta name="author" content="Helcio Anicio" />
+    <link rel="icon" type="image/png" href="/src/assets/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,10 +22,23 @@
       rel="stylesheet"
     />
     <link href="/src/index.css" rel="stylesheet" />
-    <title>UniPromotora</title>
+    <title>UniPromotora - Promoções e Serviços Financeiros</title>
   </head>
   <body>
-    <div id="root"></div>
+    <header>
+      <h1>Bem-vindo à UniPromotora</h1>
+      <nav>
+        <ul>
+          <li><a href="#about" aria-label="Sobre nós">Sobre</a></li>
+          <li><a href="#services" aria-label="Nossos serviços">Serviços</a></li>
+          <li><a href="#contact" aria-label="Entre em contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="root" role="main" tabindex="-1"></main>
+    <footer>
+      <p>&copy; 2023 UniPromotora. Todos os direitos reservados.</p>
+    </footer>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
