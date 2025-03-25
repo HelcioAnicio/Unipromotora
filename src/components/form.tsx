@@ -79,6 +79,14 @@ export const Form = () => {
         setTimeout(() => {
           setFormItsOk("none");
         }, 3000);
+        setDataForm({
+          fullName: "",
+          email: "",
+          cellphone: "",
+          cpf: "",
+          font: "",
+          service: "",
+        });
       } else {
         setFormItsOk("error");
         setTimeout(() => {
@@ -135,22 +143,6 @@ export const Form = () => {
             />
           </div>
           <div className="flex w-full flex-col">
-            <label className="text-sm" htmlFor="email">
-              Email
-            </label>
-            <input
-              className="rounded-2xl bg-white px-4 py-1 text-black outline-none placeholder:text-gray-400"
-              id="email"
-              type="email"
-              name="email"
-              onChange={handleInputValues}
-              value={dataForm.email}
-              placeholder="email@email.com"
-              required
-              aria-required="true"
-            />
-          </div>
-          <div className="flex w-full flex-col">
             <label className="text-sm" htmlFor="cellphone">
               Telefone/Whatsapp
             </label>
@@ -194,7 +186,9 @@ export const Form = () => {
               className="rounded-2xl bg-white px-4 py-1 text-gray-400 outline-none"
               aria-required="true"
             >
-              <option value="">Selecione sua fonte de renda</option>
+              <option value="" disabled>
+                Selecione sua fonte de renda
+              </option>
               <option value="beneficiario">Beneficiário (INSS)</option>
               <option value="aposentado ou servidor publico">
                 Aposentado ou Servidor Público
